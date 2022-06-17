@@ -1,0 +1,42 @@
+
+#random-number {
+    display: block;
+}
+
+.dice {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 200px;
+}
+
+.dice1 {
+    background-image: url(../img/1.png);
+    background-size: cover;
+}
+
+.dice2 {
+    background-image: url(../img/2.png);
+    background-size: cover;
+}
+
+.dice3 {
+    background-image: url(../img/3.png);
+    background-size: cover;
+}
+
+.dice4 {
+    background-image: url(../img/4.png);
+    background-size: cover;
+}
+
+.dice5 {
+    background-image: url(../img/5.png);
+    background-size: cover;
+}
+
+.dice6 {
+    background-image: url(../img/6.png);
+    background-size: cover;
+}
+

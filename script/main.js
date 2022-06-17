@@ -1,3 +1,4 @@
+// MEMBER AUTENTICATION
 
 // Creating an array of mails
 const memberList = [
