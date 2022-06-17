@@ -23,8 +23,8 @@ const memberList = [
 let userInput;
 let member;
 let memberCheck = false;
-let logged = "Congratulation, You are a member."
-let error = "We are sorry, You are not a member, please sign."
+let logged = "Congratulation, You can play."
+let error = "We are sorry, You are not a member, please sign in to play."
 
 document.getElementById("submit").addEventListener("click", function() {
 
@@ -44,7 +44,16 @@ document.getElementById("submit").addEventListener("click", function() {
     // Depending on the check value a different message will appear on screen
     if (memberCheck == true) {
         document.getElementById("message").innerHTML = logged;
+        document.getElementById("play-button").classList.remove("hidden");
+        document.getElementById("signin-section").classList.add("hidden");
     } else {
         document.getElementById("message").innerHTML = error;
+        document.getElementById("signin-section").classList.remove("hidden");
     }
+});
+
+// Allowing the creation of other members
+document.getElementById("signin").addEventListener("click", function() {
+    const newUser = document.getElementById("user-sign-in-input").value;
+    memberList.push(newUser);
 });

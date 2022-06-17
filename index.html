@@ -5,17 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperSecretDice</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <label for="email">Insert Your email</label>
-    <input type="email" name="email" id="user-email-input" value="">
 
-    <button id="submit">Submit</button>
+    <section>
 
-    <p id="message"></p>
+        <div class="container flx">
+            <label for="email">Insert Your email</label>
+            <input type="email" name="email" id="user-email-input" value="">
 
-    <a href="./dice.html" target="_blank">Play!</a>
+            <button id="submit">Submit</button>
+            <p id="message"></p>
+            <a href="./dice.html" target="_blank" id="play-button" class="hidden">Play!</a>
+        </div>
 
+        <div id ="signin-section" class=" flx hidden">
+            <label for="email">Sign in</label>
+            <input type="email" name="email" id="user-sign-in-input" value="">
+
+            <button id="signin">Sign-in</button>
+        </div>
+        
+
+        
+    
+
+    </section>
 
     <script src="./script/main.js"></script>
 </body>
