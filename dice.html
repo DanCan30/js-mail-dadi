@@ -9,15 +9,20 @@
 </head>
 <body>
 
+    <section id="dice-container">
+        <button id="random-number">Throw the dice!</button>
 
-    <button id="random-number">Get a random number and throw the dice!</button>
+        <div class="dice-wrapper">
+            <div class="dice user-dice"></div>
+            <div class="dice ai-dice"></div>
+        
 
-    <div class="dice user-dice"></div>
-    <div class="dice ai-dice"></div>
+            <span id="user-number"></span>
+            <span id="ai-number"></span>
+            <h2 id="winner"></h2>
 
-    <p id="user-number"></p>
-    <p id="ai-number"></p>
-    <div id="winner"></div>
+        </div>
+    </section>
 
     <script src="./script/dice.js"></script>
 </body>

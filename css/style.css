@@ -8,12 +8,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#index {
+    background-color: rgb(245, 239, 231);
+}
+
 #random-number {
     display: block;
 }
 
 section {
-    margin-top: 300px;
+    padding-top: 300px;
+    
 }
 
 .flx {
@@ -63,63 +68,85 @@ label {
     font-size: 3rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hidden {
+    display: none;
+}
 
 
 
 /* Dice Game */
 
+#random-number {
+    margin: 20px auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#dice-container {
+    width: 70%;
+    margin: auto;    
+}
+
+.dice-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+#user-number,
+#ai-number {
+    margin: 0 225px;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+#winner {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.winner-color {
+    color: green;
+}
+
+.loser-color {
+    color: red;
+}
 
 .dice {
     width: 300px;
     height: 300px;
     display: inline-block;
-    margin: 200px;
+    margin: 100px 200px;
+    background-size: cover;
 }
 
 .dice1 {
     background-image: url(../img/1.png);
-    background-size: cover;
 }
 
 .dice2 {
     background-image: url(../img/2.png);
-    background-size: cover;
 }
 
 .dice3 {
     background-image: url(../img/3.png);
-    background-size: cover;
 }
 
 .dice4 {
     background-image: url(../img/4.png);
-    background-size: cover;
 }
 
 .dice5 {
     background-image: url(../img/5.png);
-    background-size: cover;
 }
 
 .dice6 {
     background-image: url(../img/6.png);
-    background-size: cover;
 }
-
-.hidden {
-    display: none;
-}
-

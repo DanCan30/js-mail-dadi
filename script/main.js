@@ -48,6 +48,7 @@ document.getElementById("submit").addEventListener("click", function() {
         document.getElementById("signin-section").classList.add("hidden");
     } else {
         document.getElementById("message").innerHTML = error;
+        document.getElementById("user-email-input").value = "";
         document.getElementById("signin-section").classList.remove("hidden");
     }
 });
@@ -56,4 +57,6 @@ document.getElementById("submit").addEventListener("click", function() {
 document.getElementById("signin").addEventListener("click", function() {
     const newUser = document.getElementById("user-sign-in-input").value;
     memberList.push(newUser);
+    document.getElementById("user-sign-in-input").value = "";
+    document.getElementById("message").innerHTML = "Signed in!";
 });

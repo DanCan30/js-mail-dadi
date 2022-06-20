@@ -5,16 +5,17 @@
     let userNumber;
     let aiNumber;
 
-    
+        // Adding on click function
     document.getElementById("random-number").addEventListener("click", function() {
     
+        // Taking two random numbers
         userNumber = Math.floor(Math.random() * 6 + 1);
         aiNumber = Math.floor(Math.random() * 6 + 1);
 
         let userDice = document.querySelector(".user-dice");
         let aiDice = document.querySelector(".ai-dice");
 
-
+        // #1 Changing the div appearance basing on the random number of the variable
         switch (userNumber) {
             case 1:
                 userDice.classList.add("dice1");
@@ -37,6 +38,7 @@
             break;
         }
         
+        // #2
         switch (aiNumber) {
             case 1:
                 aiDice.classList.add("dice1");
@@ -60,16 +62,22 @@
         }
 
 
-
+        // Printing an information about the random number taken
         document.getElementById("user-number").innerHTML = "Your number is: " + userNumber + "!";
         document.getElementById("ai-number").innerHTML = "My number is: " + aiNumber + "!";
 
+        // Picking up the winner
         if (userNumber > aiNumber) {
             document.getElementById("winner").innerHTML = "YOU WON!";
+            document.getElementById("winner").classList.remove("loser-color");
+            document.getElementById("winner").classList.add("winner-color");
         } else if (userNumber < aiNumber) {
-            document.getElementById("winner").innerHTML = "I WON!";
+            document.getElementById("winner").innerHTML = "YOU LOST! Haha";
+            document.getElementById("winner").classList.remove("winner-color");
+            document.getElementById("winner").classList.add("loser-color");
         } else {
-            document.getElementById("winner").innerHTML = "WE ARE EVEN! THROW IT AGAIN!";
+            document.getElementById("winner").innerHTML = "We are even! Throw it again!";
+            document.getElementById("winner").classList.remove("winner-color", "loser-color");
         }
     
     });
